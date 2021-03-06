@@ -9,8 +9,10 @@ public class Ichigo {
 	}
 
 	public void setHinsyu(String hinsyu) throws Exception {
-		this.hinsyu = hinsyu;
-		throw new Exception();
+		if(hinsyu.equals("あまおう") || hinsyu.equals("とちおとめ") || hinsyu.equals("もういっこ"))
+			this.hinsyu = hinsyu;
+		else
+			throw new Exception();
 	}
 
 
