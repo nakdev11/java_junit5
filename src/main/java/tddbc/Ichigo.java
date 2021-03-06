@@ -3,6 +3,15 @@ package tddbc;
 public class Ichigo {
 
     private String hinsyu;
+    private String size;
+
+	public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
+	}
 
 	public String getHinsyu() {
 		return hinsyu;

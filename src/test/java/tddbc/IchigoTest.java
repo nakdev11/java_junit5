@@ -51,6 +51,17 @@ public class IchigoTest {
         	assertThrows(Exception.class, () -> sut.setHinsyu("ひんしゅ"));
         }
 
+        @Test
+        public void サイズを文字列で与えてSであればいちごクラスに保存() {
+        	// Setup
+        	Ichigo sut = new Ichigo();
+        	// Exercise
+        	sut.setSize("S");
+        	String actual = sut.getSize();
+        	// Verify
+        	assertEquals("s", actual);
+        }
+
     }
 
 }
