@@ -8,8 +8,9 @@ public class Ichigo {
 		return hinsyu;
 	}
 
-	public void setHinsyu(String hinsyu) {
+	public void setHinsyu(String hinsyu) throws Exception {
 		this.hinsyu = hinsyu;
+		throw new Exception();
 	}
 
 

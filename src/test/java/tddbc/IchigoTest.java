@@ -11,7 +11,7 @@ public class IchigoTest {
     @Nested
     class 品種とサイズを与えていちごを作成する{
         @Test
-        public void 品種を文字列で与えてあまおうであればいちごクラスに保存() {
+        public void 品種を文字列で与えてあまおうであればいちごクラスに保存() throws Exception {
             // Setup
             Ichigo sut = new Ichigo();
             // Exercise
@@ -22,7 +22,7 @@ public class IchigoTest {
         }
 
         @Test
-        public void 品種を文字列で与えてとちおとめであればいちごクラスに保存() {
+        public void 品種を文字列で与えてとちおとめであればいちごクラスに保存() throws Exception {
             // Setup
             Ichigo sut = new Ichigo();
             // Exercise
@@ -33,7 +33,7 @@ public class IchigoTest {
         }
 
         @Test
-        public void 品種を文字列で与えてもういっこであればいちごクラスに保存() {
+        public void 品種を文字列で与えてもういっこであればいちごクラスに保存() throws Exception {
         	// Setup
         	Ichigo sut = new Ichigo();
         	// Exercise
