@@ -8,14 +8,15 @@ import org.junit.jupiter.api.Test;
 public class IchigoTest {
 
     @Test
-    @DisplayName("品種を文字列で与えて、あまおう とちおとめ もういっこ　であればいちごクラスに保存")
+    @DisplayName("品種を文字列で与えて、あまおう　であればいちごクラスに保存")
     public void save() {
         // Setup
-        Sample sut = new Sample();
+        Ichigo sut = new Ichigo();
         // Exercise
-        String actual = sut.say();
+        sut.setHinsyu("あまおう");
+        String actual = sut.getHinsyu();
         // Verify
-        assertEquals("Hello TDD BootCamp!", actual);
+        assertEquals("あまおう", actual);
     }
 
 }
