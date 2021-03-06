@@ -1,5 +1,7 @@
 package tddbc;
 
+import java.util.Objects;
+
 public class Ichigo {
 
     private String hinsyu;
@@ -28,7 +30,7 @@ public class Ichigo {
 	}
 
 	public String getIchigoInfoToString() {
-		return this.getHinsyu() + ": " + this.getSize();
+		return Objects.isNull(this.getHinsyu())  ? "不明" : this.hinsyu  + ": " + this.getSize();
 	}
 
 
