@@ -89,6 +89,18 @@ public class IchigoTest {
         	assertEquals("あまおう: M", actual);
         }
 
+        @Test
+        @DisplayName("サイズのみ登録されている場合、 不明: {サイズ}　を文字列で取得できる")
+        public void サイズのみ登録されている場合不明_サイズを文字列で取得できる() throws Exception {
+            // Setup
+            Ichigo sut = new Ichigo();
+            // Exercise
+            sut.setSize("M");
+            String actual = sut.getIchigoInfoToString();
+            // Verify
+            assertEquals("不明: M", actual);
+        }
+
     }
 
 }
