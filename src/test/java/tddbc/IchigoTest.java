@@ -17,5 +17,14 @@ public class IchigoTest {
         assertEquals("あまおう", actual);
     }
 
-
+    @Test
+    public void 品種を文字列で与えてとちおとめであればいちごクラスに保存() {
+        // Setup
+        Ichigo sut = new Ichigo();
+        // Exercise
+        sut.setHinsyu("とちおとめ");
+        String actual = sut.getHinsyu();
+        // Verify
+        assertEquals("とちおとめ", actual);
+    }
 }
