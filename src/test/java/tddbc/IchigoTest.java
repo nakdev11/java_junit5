@@ -31,6 +31,17 @@ public class IchigoTest {
             // Verify
             assertEquals("とちおとめ", actual);
         }
+
+        @Test
+        public void 品種を文字列で与えてもういっこであればいちごクラスに保存() {
+        	// Setup
+        	Ichigo sut = new Ichigo();
+        	// Exercise
+        	sut.setHinsyu("もういっこ");
+        	String actual = sut.getHinsyu();
+        	// Verify
+        	assertEquals("もういっこ", actual);
+        }
     }
 
 }
