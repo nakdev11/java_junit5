@@ -28,7 +28,7 @@ public class Ichigo {
 	}
 
 	public String getIchigoInfoToString() {
-		return "あまおう: M";
+		return this.getHinsyu() + ": " + this.getSize();
 	}
 
 
