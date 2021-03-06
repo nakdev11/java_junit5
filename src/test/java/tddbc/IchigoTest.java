@@ -59,7 +59,7 @@ public class IchigoTest {
         	sut.setSize("S");
         	String actual = sut.getSize();
         	// Verify
-        	assertEquals("s", actual);
+        	assertEquals("S", actual);
         }
 
     }
