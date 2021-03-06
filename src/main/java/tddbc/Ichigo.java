@@ -30,7 +30,8 @@ public class Ichigo {
 	}
 
 	public String getIchigoInfoToString() {
-		return Objects.isNull(this.getHinsyu())  ? "不明" : this.hinsyu  + ": " + this.getSize();
+		String hinsyuToString = Objects.isNull(this.getHinsyu())  ? "不明" : this.hinsyu;
+		return hinsyuToString + ": " + this.getSize();
 	}
 
 
