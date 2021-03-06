@@ -101,6 +101,18 @@ public class IchigoTest {
             assertEquals("不明: M", actual);
         }
 
+        @Test
+        @DisplayName("品種のみ登録されている場合、 {品種}: 不明 を文字列で取得できる")
+        public void 品種のみ登録されている場合_品種_不明を文字列で取得できる() throws Exception {
+            // Setup
+            Ichigo sut = new Ichigo();
+            // Exercise
+            sut.setHinsyu("もういっこ");
+            String actual = sut.getIchigoInfoToString();
+            // Verify
+            assertEquals("もういっこ: 不明", actual);
+        }
+
     }
 
 }
