@@ -52,7 +52,7 @@ public class IchigoTest {
         }
 
         @Test
-        public void サイズを文字列で与えてSであればいちごクラスに保存() {
+        public void サイズを文字列で与えてSであればいちごクラスに保存() throws Exception {
         	// Setup
         	Ichigo sut = new Ichigo();
         	// Exercise

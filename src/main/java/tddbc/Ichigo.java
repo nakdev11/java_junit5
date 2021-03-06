@@ -9,8 +9,11 @@ public class Ichigo {
 		return size;
 	}
 
-	public void setSize(String size) {
-		this.size = size;
+	public void setSize(String size) throws Exception {
+		if(size.equals("S") || size.equals("M") || size.equals("L") || size.equals("LL"))
+			this.size = size;
+		else
+			throw new Exception();
 	}
 
 	public String getHinsyu() {
