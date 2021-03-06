@@ -62,6 +62,14 @@ public class IchigoTest {
         	assertEquals("S", actual);
         }
 
+        @Test
+        public void サイズを文字列で与えてS_M_L_LLでない場合例外を返す() {
+            // Setup
+            Ichigo sut = new Ichigo();
+            // Verify
+            assertThrows(Exception.class, () -> sut.setSize("XL"));
+        }
+
     }
 
 }
