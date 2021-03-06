@@ -27,5 +27,9 @@ public class Ichigo {
 			throw new Exception();
 	}
 
+	public String getIchigoInfoToString() {
+		return "あまおう: M";
+	}
+
 
 }
