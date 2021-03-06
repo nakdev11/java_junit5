@@ -113,6 +113,17 @@ public class IchigoTest {
             assertEquals("もういっこ: 不明", actual);
         }
 
+        @Test
+        @DisplayName("品種、サイズが登録されていない場合、 不明: 不明 　を文字列で取得できる")
+        public void 品種_サイズが登録されていない場合_不明_不明を文字列で取得できる() throws Exception {
+        	// Setup
+        	Ichigo sut = new Ichigo();
+        	// Exercise
+        	String actual = sut.getIchigoInfoToString();
+        	// Verify
+        	assertEquals("不明: 不明", actual);
+        }
+
     }
 
 }
