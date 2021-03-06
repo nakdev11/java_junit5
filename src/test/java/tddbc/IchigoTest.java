@@ -2,14 +2,12 @@ package tddbc;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class IchigoTest {
 
     @Test
-    @DisplayName("品種を文字列で与えて、あまおう　であればいちごクラスに保存")
-    public void save() {
+    public void 品種を文字列で与えてあまおうであればいちごクラスに保存() {
         // Setup
         Ichigo sut = new Ichigo();
         // Exercise
@@ -18,5 +16,6 @@ public class IchigoTest {
         // Verify
         assertEquals("あまおう", actual);
     }
+
 
 }
