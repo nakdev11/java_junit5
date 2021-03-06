@@ -42,6 +42,17 @@ public class IchigoTest {
         	// Verify
         	assertEquals("もういっこ", actual);
         }
+        @Test
+        public void 品種を文字列で与えてあまおう_とちおとめ_もういっこではない場合例外を返す() {
+        	// Setup
+        	Ichigo sut = new Ichigo();
+        	// Exercise
+        	sut.setHinsyu("ひんしゅ");
+        	String actual = sut.getHinsyu();
+        	// Verify
+        	assertThrows(Exception.class, () -> );
+        }
+
     }
 
 }
